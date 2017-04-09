@@ -97,14 +97,14 @@ int main() {
 
 	time_t start, end;
 
-	Student* uc1 = readStudentsFromFile("uc_students_sorted_by_id.txt", LEN);
+	Student* uc1 = readStudentsFromFile("uc_students_sorted_by_id", LEN);
 	time(&start);
 	sortByGroupById1(uc1, LEN);
 	time(&end);
 		cout << "Using library sort it took " << difftime(end, start) << " seconds."
 				<< endl;
 
-	Student* uc2 = readStudentsFromFile("uc_students_sorted_by_id.txt", LEN);
+	Student* uc2 = readStudentsFromFile("uc_students_sorted_by_id", LEN);
 	time(&start);
 	sortByGroupById2(uc2, LEN);
 	time(&end);
